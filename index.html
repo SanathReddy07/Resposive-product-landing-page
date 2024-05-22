@@ -1,103 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Landing Page</title>
-    <link rel="stylesheet" href="/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/9650a62e47.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Product Landing Page - freecodecamp</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="logo">Logo</div>
-        <nav class="nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="cta">
-            <a href="#" class="button">Sign Up</a>
-        </div>
-    </header>
+  <header id="header">
+    <nav id="nav-bar">
+      <img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="logo" class="logo">
+      <ul>
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#how-it-work">How It Works</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <img src="/images/product-image.jpg" alt="Product Image" class="hero-image">
-            <h1 class="hero-title">Product Name</h1>
-            <p class="hero-tagline">This is the product tagline.</p>
-            <a href="#" class="button">Buy Now</a>
-        </div>
+  <div id="container">
+    <section class="message-box">
+      <h1>Handcrafted, home-made masterpieces</h1>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" type="email" name="email" placeholder="example@mail.com">
+      <input id="submit" type="submit" value="Get Started" class="btn"></input>
+      </form>
     </section>
 
-    <section class="features">
-        <div class="feature">
-            <img src="/images/feature1-icon.png" alt="Feature 1">
-            <h2>Feature 1</h2>
-            <p>Description of feature 1.</p>
+    <section id="features">
+      <div class="feature">
+        <i class="fab fa-free-code-camp fa-3x"></i>
+        <div>
+          <h2>Premium Materials</h2>
+          <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
+            purchase.</p>
         </div>
-        <div class="feature">
-            <img src="/images/feature2-icon.png" alt="Feature 2">
-            <h2>Feature 2</h2>
-            <p>Description of feature 2.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-shipping-fast fa-3x"></i>
+        <div>
+          <h2>Fast Shipping</h2>
+          <p>We make sure you receive your trombone as soon as we have finished making it. We also provide free returns
+            if you are not satisfied.</p>
         </div>
-        <div class="feature">
-            <img src="/images/feature3-icon.png" alt="Feature 3">
-            <h2>Feature 3</h2>
-            <p>Description of feature 3.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-battery-full fa-3x"></i>
+        <div>
+          <h2>Quality Assurance</h2>
+          <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the
+            pitch of your instrument.</p>
         </div>
+      </div>
     </section>
-
-    <section class="benefits">
-        <div class="benefit">
-            <img src="/images/benefit1.jpg" alt="Benefit 1">
-            <div class="benefit-text">
-                <h2>Benefit 1</h2>
-                <p>Explanation of benefit 1.</p>
-            </div>
-        </div>
-        <div class="benefit">
-            <img src="/images/benefit2.jpg" alt="Benefit 2">
-            <div class="benefit-text">
-                <h2>Benefit 2</h2>
-                <p>Explanation of benefit 2.</p>
-            </div>
-        </div>
-        <div class="benefit">
-            <img src="/images/benefit3.jpg" alt="Benefit 3">
-            <div class="benefit-text">
-                <h2>Benefit 3</h2>
-                <p>Explanation of benefit 3.</p>
-            </div>
-        </div>
+    <section id="how-it-work">
+      <iframe id="video" src="https://www.youtube.com/embed/JEwOy5Fm1yw"></iframe>
     </section>
-
-    <section class="testimonials">
-        <div class="testimonial">
-            <img src="/images/customer1.jpg" alt="Customer 1">
-            <p>"Testimonial from customer 1."</p>
-        </div>
-        <div class="testimonial">
-            <img src="/images/customer2.jpg" alt="Customer 2">
-            <p>"Testimonial from customer 2."</p>
-        </div>
-        <div class="testimonial">
-            <img src="/images/customer3.jpg" alt="Customer 3">
-            <p>"Testimonial from customer 3."</p>
-        </div>
+    <section id="pricing">
+      <div class="price-box">
+        <h3>TENOR TROMBONE</h3>
+        <h2>$600</h2>
+        <p>Lorem ipsum.
+          Lorem ipsum.
+          Lorem ipsum dolor.
+          Lorem ipsum.</p>
+        <a href="#" class="btn">SELECT</a>
+      </div>
+      <div class="price-box">
+        <h3>BASS TROMBONE</h3>
+        <h2>$900</h2>
+        <p>Lorem ipsum.
+          Lorem ipsum.
+          Lorem ipsum dolor.
+          Lorem ipsum.</p>
+        <a href="#" class="btn">SELECT</a>
+      </div>
+      <div class="price-box">
+        <h3>VALVE TROMBONE</h3>
+        <h2>$1200</h2>
+        <p>Lorem ipsum.
+          Lorem ipsum.
+          Lorem ipsum dolor.
+          Lorem ipsum.</p>
+        <a href="#" class="btn">SELECT</a>
+      </div>
     </section>
-
-    <footer class="footer">
-        <div class="footer-links">
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
-            <a href="#">Privacy Policy</a>
-        </div>
-        <div class="social-media">
-            <a href="#"><img src="/images/facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="/images/twitter-icon.png" alt="Twitter"></a>
-            <a href="#"><img src="/images/instagram-icon.png" alt="Instagram"></a>
-        </div>
-    </footer>
+  </div>
+  <!-- FOOTER -->
+  <footer id="main-footer">
+    <div>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Contact</a>
+    </div>
+    <p class="my-name">This Page recreated by <a target="_blank" id="fcs" href="https://github.com/FreeCodeCamp-Solutions/">FreeCodeCamp-Solutions</a></p>
+    <p>&copy;Copyright 2016, Original Trombones</p>
+  </footer>
 </body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
